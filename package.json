@@ -1,0 +1,8 @@
+{
+  "name": "product_page",
+  "version": "1.0.0",
+  "description": "Product single page",
+  "main": "index.html",
+  "author": "Danil Semirazov",
+  "license": "ISC"
+}
