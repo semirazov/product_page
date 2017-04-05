@@ -1,0 +1,40 @@
+.product {
+    &__title {
+        &-text {
+            font-size: 24px;
+            color: $text-color;
+            font-weight: 600;
+            margin: 40px 0 20px;
+        }
+    }
+    &__reviews {
+        &-item {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 14px;
+        }
+        .text-primary {
+            padding: 0 10px 0 5px;
+        }
+        .link {
+            padding-left: 10px;
+        }
+    }
+    &__price {
+        font-weight: 600;
+        font-size: 24px;
+        color: $color_primary;
+        margin: 20px 0;
+    }
+    &__data {
+        margin: 20px 0;
+    }
+    &__description {
+        margin: 30px 0 20px;
+    }
+    &__list {
+        color: $text-color-secondary;
+        margin: 30px 0;
+        padding-left: 17px;
+    }
+}

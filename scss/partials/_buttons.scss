@@ -1,0 +1,36 @@
+.cta {
+    line-height: $cta_height;
+    min-width: 125px;
+    border-width: 2px;
+    border-style: solid;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    color: $text-color;
+    cursor: pointer;
+    font-weight: 400;
+    @include transition(background 0.15s ease-in, color 0.15s ease-in);
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.cta.cta--header {
+    border-color: $color_soft_orange;
+    font-size: 12px;
+    &:hover {
+        background: $color_soft_orange;
+    }
+}
