@@ -9,7 +9,7 @@
     padding: 0 20px;
     color: $text-color;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 600;
     @include transition(background 0.15s ease-in, color 0.15s ease-in);
     &:hover {
         text-decoration: none;
@@ -27,10 +27,43 @@
     }
 }
 
+a.cta {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
 .cta.cta--header {
     border-color: $color_soft_orange;
     font-size: 12px;
     &:hover {
         background: $color_soft_orange;
+    }
+}
+
+.cta.cta--mini {
+    border-color: $color_light_gray;
+    border-width: 1px;
+    font-size: 12px;
+    &:hover {
+        background: $color_dark;
+        color: white;
+        i {
+            color: white;
+        }
+    }
+}
+
+.cta.cta--main {
+    background: $color_dark;
+    color: white !important;
+    border-width: 1px;
+    font-size: 12px;
+    &:hover {
+        background: #383737;
+        border-width: 1px;
     }
 }

@@ -1,0 +1,11 @@
+.page-footer {
+    height: $footer-height;
+    border-top: 1px solid $color_light_gray;
+    .copyright-text {
+        padding: 28px 5px;
+        text-align: center;
+        color: #b5b5b5;
+        font-size: 13px;
+        margin: 0;
+    }
+}

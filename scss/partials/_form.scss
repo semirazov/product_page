@@ -1,0 +1,62 @@
+.input-group-btn-vertical {
+    position: relative;
+    white-space: nowrap;
+    width: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    > .btn {
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 8px;
+        margin-left: -1px;
+        position: relative;
+        border-radius: 0;
+        outline: none;
+        &:first-child {}
+        &:last-child {
+            margin-top: -2px;
+        }
+    }
+    i {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: $color_gray;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+form {
+    .btn,
+    .form-control {
+        border-radius: 0;
+    }
+    .form-control-link {
+        margin-top: 15px;
+    }
+}
+
+form.language-form {
+    .bfh-selectbox .bfh-selectbox-toggle {
+        border: 0;
+        box-shadow: none;
+    }
+    .bfh-selectbox .bfh-selectbox-toggle .selectbox-caret {
+        color: $color_gray;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    form {
+        max-width: 368px;
+        .spinner {
+            max-width: 100px;
+        }
+    }
+}

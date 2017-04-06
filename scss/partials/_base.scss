@@ -53,7 +53,7 @@ i.fa.fa-heart-o {
 }
 
 main.content {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 
 .text-bold {
@@ -96,5 +96,27 @@ ul.list.list--bullet {
             color: #cccccc;
             margin-right: 10px;
         }
+    }
+}
+
+.twitter-follow-button {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 991px) {
+    .smHide {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .xsHide {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .xsShow {
+        display: none !important;
     }
 }

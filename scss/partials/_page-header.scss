@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     border: none;
+    position: relative;
+    z-index: 100;
     .container {
         height: 100%;
         position: relative;
@@ -52,6 +54,11 @@
                 margin-top: -($cta-height/2 + 2)
             }
         }
+        .language-form {
+            position: absolute;
+            top: 50%;
+            margin-top: -19px;
+        }
     }
     &__bottom {
         height: $header-nav-height;
@@ -76,6 +83,10 @@
         }
     }
     &__nav {
+        padding: 0;
+        .collapse {
+            padding: 0;
+        }
         ul {
             text-align: center;
             padding: 0;
@@ -114,5 +125,57 @@
         line-height: 28px;
         text-transform: uppercase;
         font-size: 12px;
+    }
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 20px;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-header__nav .navbar-collapse {
+        text-align: left;
+        background: white;
+        width: 210px;
+        position: absolute;
+        left: 60px;
+        top: 40px;
+        border: 1px solid #e1e1e1;
+        padding: 20px 0;
+        .navbar-nav {
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .page-header__nav {
+        height: 100%;
+    }
+    .page-header__nav ul>li {
+        display: block;
+        text-align: left;
+        > a {
+            line-height: 45px;
+        }
+    }
+    .brand-logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
