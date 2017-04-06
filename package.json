@@ -1,20 +1,22 @@
 {
-    "name": "product_page",
-    "version": "1.0.0",
-    "description": "Product single page",
-    "main": "index.html",
-    "author": "Danil Semirazov",
-    "license": "ISC",
-    "devDependencies": {
-        "node-sass": "^4.5.2",
-        "nodemon": "^1.11.0"
-    },
-    "dependencies" : {
-      "bootstrap-sass": "~3.3.1"
-    },
-    "scripts": {
-        "build-css": "node-sass --output-style compressed --include-path scss scss/main.scss public/css/main.css",
-        "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-        "start": "node server.js"
-    }
+  "name": "product_page",
+  "version": "1.0.0",
+  "description": "Product single page",
+  "main": "index.html",
+  "author": "Danil Semirazov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "~3.3.1",
+    "connect": "^3.6.0",
+    "serve-static": "^1.12.1"
+  },
+  "scripts": {
+    "build-css": "node-sass --output-style compressed --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "node server.js"
+  }
 }
